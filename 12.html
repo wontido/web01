@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
 <head>
-	<title>기본문법-태그</title>
+	<title>문서의 구조와 슈퍼스타들</title>
 	<meta charset="utf-8">
 </head>
 <body>
 	<h1><a href="index.html">WEB Study</a></h1>
 	<ol>
+	<blockquote>
 		<li><a href="1.html">생활코딩</a></li>
 		<li><a href="2.html">생활코딩 OT</a></li>
 		<li><a href="3.html">코딩과 HTML</a></li>
@@ -24,16 +25,46 @@
 		<li><a href="15.html">원시웹</a></li>
 		<li><a href="16.html">인터넷을 여는 열쇠: 서버와 클라이언트</a></li>
 		<li><a href="17.html">웹호스팅(github pages)</a></li>		
+	</blockquote>
 	</ol>
-	<h2>기본문법-태그</h2>
+	<h2>문서의 구조와 슈퍼스타들 2월 20일</h2>
 	<p>
-	API: Application Programming Interface<br>
-	ex) Cloud Computing, App Store<br>
-	OPENS SOURCE(=CODE) 소프트웨어의 설계도, 곧 설계도가 제품이다.<br>
-	-> 생산성 향상, 슈퍼개인의 출현, 권력은 이제 기술에서 나온다.<br>
-	프로그래밍=코딩<br>
+	정보를 잘 정리정돈하기 위한 체계로 WEB 문서를 구조화하는 태그들이 있음<br>
+	웹브라우저의 탭에 문서에 대해 설명하는 제목 태그<br>
+	< title > 제목 < / title ><br>
+	-> 검색엔진이 웹페이지를 분석할때 가장 중요하게 생각<br>
 	<br>
-	관련 수업 <a href="https://opentutorials.org/course/1" target="_blank" title="생활코딩"><strong>생활코딩</strong></a>
+	문서에 영어가 아닌 문자를 사용했을때 글자가 깨지는 경우가 있음.<br>
+	즉 웹페이지의 문자 표현방식과 웹브라우저의 문자 해석방식이 불일치 할때 발생함.<br>
+	< meta charset="UTF-8" ><br>
+	charset: 캐릭터세트, UTF-8: 문자 약속 기준<br>
+	<br>
+	위의 두 태그는 본문이 아니라 본문을 설명하는 정보로 이를 head 태그로 묶어줌.<br>
+	< head ><br>
+		< title > 제목 < / title ><br>
+		< meta charset="UTF-8" ><br>
+	< / head ><br>
+	<br>
+	본문은 body 태그로 구분함.<br>
+	< body ><br>
+	본문 내용<br>
+	< / body > <br>
+	<br>
+	head와 body를 감싸는 html 태그로 약속, 그리고 HTML로 제작되었다는 코드 추가<br>
+	< !doctype html ><br>
+	< html > <br>
+		< head > <br>
+		본문 설명<br>
+		< / head ><br>
+		< body ><br>
+		본문 내용<br>
+		< / body ><br>
+	< / html ><br>
+	<br>
+	다른 웹페이지들의 구조 확인해볼 것.<br>
+	구조를 알았으니 시야가 넓어지고 예전에 보이지 않았던 것들이 보일 것이다.<br>
+	<br>
+	관련 수업 <a href="https://opentutorials.org/course/3084/18409" target="_blank" title="생활코딩"><strong>생활코딩</strong></a>
 	</p>
 </body>
 </html>
